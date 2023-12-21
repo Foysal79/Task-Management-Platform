@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import './Banner.css'
 import { useEffect } from 'react';
 import Aos from 'aos';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 
@@ -27,7 +28,7 @@ const Home = () => {
             <h4 className=' text-lg md:text-2xl font-semibold md:font-bold text-white' >Plan, Track and Organise your work.</h4>
             <p className='text-sm text-justify md:text-start font-light md:font-medium text-white' >An Intranet platform to Manage projects, organise work and focus on what’s important.</p>
             <div className='flex justify-center md:justify-start ' >
-            <button className='mt-10 md:mt-0 btn text-lg font-bold bg-[#F2F7A1] hover:bg-[#F2F7A1] text-black' >Let’s Explore</button>
+            <Link to="/dashboard" ><button  className='mt-10 md:mt-0 btn text-lg font-bold bg-[#F2F7A1] hover:bg-[#F2F7A1] text-black' >Let’s Explore</button></Link>
             </div>
             </div>
             
