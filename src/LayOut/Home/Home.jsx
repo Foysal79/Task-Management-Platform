@@ -1,11 +1,15 @@
 
+import { Helmet } from 'react-helmet-async';
 import './Banner.css'
 
 const Home = () => {
     return (
         <div className="background1 font-Inter " >
+            <Helmet>
+                <title> ST || Home </title>
+            </Helmet>
 
-            <div className='space-y-2 md:space-y-3 w-9/12 mx-auto md:mx-0 md:w-full  lg:w-5/12 pt-16  md:pt-20 md:pl-10 lg:pt-36 lg:pl-20 '  >
+            <div className='space-y-2 md:space-y-3 w-9/12 mx-auto md:mx-0 md:w-full  lg:w-5/12 pt-16  md:pt-20 md:pl-10 lg:pt-40 lg:pl-20 '  >
             <h2 className=' text-center md:text-start  font-bold text-3xl md:text-5xl text-white' >Manage work <br /> <span className='text-[#F2F7A1]' > Efficiently
                 </span> </h2>
             <h4 className=' text-lg md:text-2xl font-semibold md:font-bold text-white' >Plan, Track and Organise your work.</h4>
