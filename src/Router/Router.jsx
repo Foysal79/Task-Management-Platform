@@ -1,12 +1,18 @@
 
 import { createBrowserRouter } from 'react-router-dom';
 import Root from '../Root/Root';
-import Home from '../LayOut/Home/Home';
+
 import User from '../LayOut/User/User';
 import Main from '../LayOut/Main/Main';
-import DashBoard from '../LayOut/DashBoard/DashBoard';
+
 import SignUp from '../LoginLogOut/SignUp';
 import Login from '../LoginLogOut/Login';
+import PrivetRouter from './PrivetRouter';
+import Profile from '../LayOut/DashBoard/Profile/Profile';
+import MainDashboard from '../LayOut/DashBoard/MainDashboard/MainDashboard';
+import NewTask from '../LayOut/DashBoard/NewTask/NewTask';
+
+import Task from '../LayOut/DashBoard/Task/Task';
 
 const Router = createBrowserRouter([
     {
@@ -21,10 +27,7 @@ const Router = createBrowserRouter([
           path: "/user",
           element: <User></User>
         },
-        {
-          path: "/dashBoard",
-          element : <DashBoard></DashBoard>
-        }
+        
       ]
     },
     {
@@ -34,6 +37,26 @@ const Router = createBrowserRouter([
     {
       path : "/login",
       element : <Login></Login>
+    },
+    {
+      path: "/dashBoard",
+      element : <PrivetRouter><MainDashboard></MainDashboard></PrivetRouter>,
+      children : [
+        {
+          path : "/dashBoard/profile",
+          element : <Profile></Profile>
+        },
+        {
+          path: "/dashBoard/newTask",
+          element : <NewTask></NewTask>
+        },
+        {
+          path : "/dashBoard/task",
+          element : <Task></Task>
+        },
+        
+        
+      ]
     }
   ]);
 

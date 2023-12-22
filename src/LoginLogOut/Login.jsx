@@ -1,13 +1,14 @@
 import  { useContext } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Provider/AuthProvider';
-import toast from 'react-hot-toast';
+
 import Swal from 'sweetalert2';
 
 const Login = () => {
 
     const {LogIn} = useContext(AuthContext);
     const navigate = useNavigate();
+    const location = useLocation();
     const handelLogin = e => {
         e.preventDefault();
         
@@ -25,6 +26,7 @@ const Login = () => {
           });
           navigate(location?.state ? location.state : '/')
           
+          console.log(" location : ", location?.state)
         })
         .catch(error => {
             Swal.fire({
