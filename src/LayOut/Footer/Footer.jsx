@@ -1,4 +1,5 @@
 import React from 'react';
+import { FcTimeline } from "react-icons/fc";
 
 const Footer = () => {
     return (
@@ -10,9 +11,10 @@ const Footer = () => {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
               
+          
+                  <div className='w-7/12' >
+                  <p className="self-center text-2xl  font-bold whitespace-nowrap dark:text-white">Self <FcTimeline /> Taskr</p>
                   
-                  <div className='w-5/12' >
-                  <span className="self-center text-4xl font-bold whitespace-nowrap dark:text-white">Self Taskr</span>
                     <p>Easy to use Work management solution which is both Powerful and intuitive</p>
                   </div>
                   
@@ -23,7 +25,7 @@ const Footer = () => {
                   <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                       <li className="mb-4">
-                          <a href="#" className="hover:underline">Self Taskr</a>
+                          <a href="#" className="hover:underline">Self   Taskr</a>
                       </li>
                       <li className="mb-4" >
                           <a href="https://tailwindcss.com/" className="hover:underline">Tailwind CSS</a>

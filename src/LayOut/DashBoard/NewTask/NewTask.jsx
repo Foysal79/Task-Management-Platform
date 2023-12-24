@@ -16,7 +16,7 @@ const NewTask = () => {
 
     console.log(data);
 
-    axios.post('http://localhost:5000/all', data )
+    axios.post('https://server-self-taskr.vercel.app/all', data )
 		.then(res => {
       console.log(res.result);
 			Swal.fire({

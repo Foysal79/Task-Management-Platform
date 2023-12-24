@@ -42,9 +42,9 @@ const DashBoard = () => {
 
             <NavLink to="/dashBoard/Notification" className="text-xl btn bg-black hover:bg-black font-semibold text-white" >Notification</NavLink>
             
-            <NavLink to="/" className="text-xl btn bg-black hover:bg-black font-semibold text-white" >Home</NavLink>
+            <NavLink to="/" className="text-xl btn bg-[#453C67] hover:bg-[#453C67] font-semibold text-white" >Home</NavLink>
             
-            <button onClick={logOutFun} className="text-xl btn bg-black hover:bg-black font-semibold text-white" >LogOut</button>
+            <button onClick={logOutFun} className="text-xl btn bg-red-600 hover:bg-red-600 font-semibold text-white" >LogOut</button>
         </div>
     );
 };

@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 
+import { FcTimeline } from "react-icons/fc";
 
 const NavBar = () => {
   const {user, LogOut} = useContext(AuthContext);
@@ -28,7 +29,7 @@ const NavBar = () => {
         }
       </ul>
     </div>
-    <a className="btn btn-ghost text-2xl font-bold">Self Taskr </a>
+    <a className="btn btn-ghost text-2xl font-bold">Self<FcTimeline />Taskr </a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

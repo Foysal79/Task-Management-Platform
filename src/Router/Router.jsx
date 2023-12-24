@@ -15,6 +15,8 @@ import NewTask from '../LayOut/DashBoard/NewTask/NewTask';
 import Task from '../LayOut/DashBoard/Task/Task';
 import Notification from '../LayOut/DashBoard/Notification/Notification';
 import UpdateTask from '../LayOut/DashBoard/UpdateTask/UpdateTask';
+import About from '../LayOut/About/About';
+import Blog from '../LayOut/Blog/Blog';
 
 const Router = createBrowserRouter([
     {
@@ -29,6 +31,14 @@ const Router = createBrowserRouter([
           path: "/user",
           element: <User></User>
         },
+        {
+          path : "/about",
+          element : <About></About>
+        },
+        {
+          path : "/blog",
+          element : <Blog></Blog>
+        }
         
       ]
     },
@@ -63,7 +73,7 @@ const Router = createBrowserRouter([
         {
           path: '/dashBoard/update/:id',
           element : <UpdateTask></UpdateTask>,
-          loader: ({params}) => fetch(`http://localhost:5000/update/${params.id}`)
+          loader: ({params}) => fetch(`https://server-self-taskr.vercel.app/update/${params.id}`)
         }
         
         
