@@ -41,7 +41,7 @@ const NavBar = () => {
     {
         user ? <div className="flex gap-4 items-center">
         <p>{user?.displayName}</p> 
-        <button onClick={() => LogOut()} className="btn bg-[#F2F7A1] hover:bg-[#F2F7A1] text-black" >LogOut</button>
+        <button onClick={() => LogOut()} className="btn bg-[#ec2727] hover:bg-[#F2F7A1] text-black" >LogOut</button>
       </div> : <Link to='/login' ><a className="btn bg-[#F2F7A1] hover:bg-[#F2F7A1] text-black">Login</a></Link>
     }
   </div>

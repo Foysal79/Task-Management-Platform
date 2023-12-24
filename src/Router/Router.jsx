@@ -13,6 +13,8 @@ import MainDashboard from '../LayOut/DashBoard/MainDashboard/MainDashboard';
 import NewTask from '../LayOut/DashBoard/NewTask/NewTask';
 
 import Task from '../LayOut/DashBoard/Task/Task';
+import Notification from '../LayOut/DashBoard/Notification/Notification';
+import UpdateTask from '../LayOut/DashBoard/UpdateTask/UpdateTask';
 
 const Router = createBrowserRouter([
     {
@@ -54,6 +56,15 @@ const Router = createBrowserRouter([
           path : "/dashBoard/task",
           element : <Task></Task>
         },
+        {
+          path : "/dashBoard/Notification",
+          element : <Notification></Notification>
+        },
+        {
+          path: '/dashBoard/update/:id',
+          element : <UpdateTask></UpdateTask>,
+          loader: ({params}) => fetch(`http://localhost:5000/update/${params.id}`)
+        }
         
         
       ]
@@ -61,3 +72,7 @@ const Router = createBrowserRouter([
   ]);
 
 export default Router;
+
+
+// Self_Taskr
+// UgkmXo0upvMv7tE7

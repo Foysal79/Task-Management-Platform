@@ -12,12 +12,12 @@ const WhoCanUse = () => {
             </div>
             
             
-            <div className="flex-1 space-y-3 lg:pr-20 " >
+            <div className="flex-1 space-y-3 lg:pr-20 w-10/12 mx-auto mb-10 " >
             <h1 className="text-3xl font-bold" >Who Benefits Most from Our Platform?</h1>
             <p className="text-justify" >Discover the Power of Streamlined Task Management: Our website offers a comprehensive task management solution designed to benefit individuals and teams across various industries. From developers organizing coding sprints to corporate professionals handling project timelines and bankers managing financial tasks, our platform provides intuitive tools for efficient task allocation, progress tracking, and collaboration. Experience enhanced productivity, seamless workflow management, and improved project outcomes, regardless of your industry or profession, by utilizing our task management website.</p>
 
 
-            <div className="flex" >
+            <div className="flex " >
             <input type="text" placeholder="Enter Email to Subscribe" className="input input-bordered w-full " />
             <button  className="btn bg-[#6D67E4] text-white hover:bg-[#6D67E4] 
             relative right-24  " >Subscribe</button>
